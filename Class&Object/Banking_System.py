@@ -6,16 +6,16 @@ class BankAccount:
         self.balance = balance
         self.customer_name = customer_name
  
-    def deposit(self, amount):
-        self.balance += amount
-        print(f"${amount:.2f} has been deposited in your account.")
+    # def deposit(self, amount):
+    #     self.balance += amount
+    #     print(f"${amount:.2f} has been deposited in your account.")
  
-    def withdraw(self, amount):
-        if amount > self.balance:
-            print("Insufficient balance.")
-        else:
-            self.balance -= amount
-            print(f"${amount:.2f} has been withdrawn from your account.")
+    # def withdraw(self, amount):
+    #     if amount > self.balance:
+    #         print("Insufficient balance.")
+    #     else:
+    #         self.balance -= amount
+    #         print(f"${amount:.2f} has been withdrawn from your account.")
  
     def check_balance(self):
         print(f"Current balance is ${self.balance:.2f}.")

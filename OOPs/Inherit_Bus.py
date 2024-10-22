@@ -10,9 +10,9 @@ class Vehicle:
     def seating_capacity(self, capacity):
         return f"The seating capacity of a {self.name} is {capacity} passengers"
 
-class Bus(Vehicle):
-    def seating_capacity(self, capacity=50):
-        return super().seating_capacity(capacity=50)
+# class Bus(Vehicle):
+#     def seating_capacity(self, capacity=50):
+#         return super().seating_capacity(capacity=50)
 
-School_bus = Bus("School Volvo", 240, 12)
-print(School_bus.seating_capacity())
+# School_bus = Bus("School Volvo", 240, 12)
+# print(School_bus.seating_capacity())
