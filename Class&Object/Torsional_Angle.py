@@ -6,17 +6,17 @@ class Points(object):
         self.y=y
         self.z=z
 
-    def __sub__(self, no):
-        return Points(self.x- no.x , self.y- no.y , self.z - no.z)
+    # def __sub__(self, no):
+    #     return Points(self.x- no.x , self.y- no.y , self.z - no.z)
 
-    def dot(self, no):
-        return (self.x*no.x + self.y*no.y + self.z*no.z)
+    # def dot(self, no):
+    #     return (self.x*no.x + self.y*no.y + self.z*no.z)
 
-    def cross(self, no):
-        return Points(
-            self.y*no.z - self.z*no.y,
-            self.x*no.z - self.z*no.x,
-            self.x*no.y - self.y*no.x
+    # def cross(self, no):
+    #     return Points(
+    #         self.y*no.z - self.z*no.y,
+    #         self.x*no.z - self.z*no.x,
+    #         self.x*no.y - self.y*no.x
         )
         
     def absolute(self):
