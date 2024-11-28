@@ -20,21 +20,21 @@ class ExpenseTrackerApp:
 
         self.create_widgets()
 
-    def load_data(self):
-        if os.path.exists(self.data_file):
-            with open(self.data_file, 'r') as file:
-                reader = csv.DictReader(file)
-                for row in reader:
-                    category = row['Category']
-                    amount = float(row['Amount'])
-                    timestamp = datetime.datetime.strptime(row['Timestamp'], '%Y-%m-%d %H:%M:%S.%f')
+    # def load_data(self):
+    #     if os.path.exists(self.data_file):
+    #         with open(self.data_file, 'r') as file:
+    #             reader = csv.DictReader(file)
+    #             for row in reader:
+    #                 category = row['Category']
+    #                 amount = float(row['Amount'])
+    #                 timestamp = datetime.datetime.strptime(row['Timestamp'], '%Y-%m-%d %H:%M:%S.%f')
 
-                    expense = {'amount': amount, 'timestamp': timestamp}
+    #                 expense = {'amount': amount, 'timestamp': timestamp}
 
-                    if category in self.expenses:
-                        self.expenses[category].append(expense)
-                    else:
-                        self.expenses[category] = [expense]
+    #                 if category in self.expenses:
+    #                     self.expenses[category].append(expense)
+    #                 else:
+    #                     self.expenses[category] = [expense]
 
     def save_data(self):
         with open(self.data_file, 'w', newline='') as file:
